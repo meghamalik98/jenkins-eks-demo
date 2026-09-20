@@ -4,9 +4,9 @@ pipeline {
 
     environment {
         AWS_REGION = 'ap-south-1'
-        ECR_REPO = 'jenkins-repo'
-        EKS_CLUSTER = 'live-tech-eks'
-        AWS_ACCOUNT_ID = '965444437141'
+        ECR_REPO = 'jenkins-eks-demo'
+        EKS_CLUSTER = 'JenkinsDemoSession'
+        AWS_ACCOUNT_ID = '319604804376'
 
         ECR_REGISTRY = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
         IMAGE_TAG = "${BUILD_NUMBER}"
